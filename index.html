@@ -556,10 +556,14 @@ if(CONFIG.SCHEDULE.length){
 $$('.reveal').forEach(e=>io.observe(e));
 
 /* ---------- Google Form posting ---------- */
+/* ---------- Formspree posting ---------- */
 async function send(data){
-  const body=new URLSearchParams();
-  for(const k in CONFIG.ENTRY) body.append(CONFIG.ENTRY[k], data[k]??'');
-  await fetch(`https://docs.google.com/forms/d/e/${CONFIG.FORM_ID}/formResponse`,{method:'POST',mode:'no-cors',body});
+  const res = await fetch("https://formspree.io/f/mgaaojvr",{
+    method:"POST",
+    headers:{"Accept":"application/json","Content-Type":"application/json"},
+    body:JSON.stringify({name:data.name,message:data.note})
+  });
+  if(!res.ok) throw new Error("send failed");
 }
 
 /* guestbook: wishes also go to the form; the sender sees their own wish on this device */
