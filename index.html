@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ziad & Zeinab – Wedding Invitation</title>
+<meta property="og:title" content="Ziad & Zeinab – Wedding Invitation">
+<meta property="og:description" content="Saturday 31 October 2026 · 7:00 PM · Love Halls">
+<meta property="og:image" content="images/invitation.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#2b4d7e;--navy2:#2c5a96;--cream:#fdfaf4;--gold:#c9b98a;--ink:#2a3547}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;font-size:clamp(16px,.5vw + 13.5px,21px)}
+body{font-family:'Cormorant Garamond','Cairo',serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+body.lock{overflow:hidden;height:100svh}
+.cin{font-family:'Cinzel',serif;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);font-weight:700}
+.wrap{width:100%;position:relative;overflow:hidden;--col:min(100%,720px)}
+
+/* ---------- COVER ---------- */
+#cover{position:fixed;inset:0;z-index:100;display:grid;place-items:center;
+  background:linear-gradient(165deg,#c4daf2,#e2e6f6 55%,#f4dfe7);transition:opacity 1s,visibility 1s}
+#cover.gone{opacity:0;visibility:hidden}
+.ccard{container-type:inline-size;position:relative;width:min(88vw,560px,calc(80svh*.68));aspect-ratio:.68;display:flex;flex-direction:column;justify-content:center;background:#fffefb;border-radius:10px;padding:14cqw 7cqw 9cqw;text-align:center;
+  box-shadow:0 30px 70px #2b4d7e40;overflow:hidden;animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both;transition:transform .9s,opacity .9s}
+#cover .pill{font-size:6.4cqw}
+#cover.opening .ccard{transform:scale(1.08) translateY(-20px);opacity:0}
+@keyframes rise{from{opacity:0;transform:translateY(40px) scale(.96)}}
+.ccard .fl{position:absolute;opacity:.92;pointer-events:none;width:38cqw;height:auto}
+.heart{position:absolute;left:50%;top:7cqw;translate:-50% 0;width:15cqw;height:15cqw;border-radius:50%;background:var(--navy);display:grid;place-items:center;z-index:2;animation:beat 1.8s infinite}
+.heart svg{width:46%;height:46%;fill:#fff}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.cnames{font-size:15cqw;line-height:1;font-weight:400;letter-spacing:-.02em;color:#1a2b4a;margin-top:6cqw;position:relative}
+.cnames i{display:block;font-size:6cqw;opacity:.6;margin:6px 0;font-weight:300}
+.orn{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px 0;color:var(--navy)}
+.orn:before,.orn:after{content:"";width:38px;height:1px;background:currentColor;opacity:.7}
+.cdate{font-size:6.4cqw;position:relative}
+.cinv{font-size:6cqw;margin:7cqw 0 6cqw;opacity:.85;position:relative}
+.pill{display:inline-block;background:var(--navy);color:#fff;border:0;border-radius:40px;padding:.7em 2.2em;font:600 1.15rem 'Cormorant Garamond',serif;cursor:pointer;box-shadow:0 8px 20px #1f4a8255;position:relative;letter-spacing:.04em}
+a.pill{text-decoration:none}
+.pill:active{transform:scale(.97)}
+
+/* ---------- MAIN ---------- */
+section{padding:clamp(44px,8vw,96px) clamp(20px,5vw,48px);text-align:center;position:relative}
+section>*:not(.bg-fl){max-width:var(--col);margin-left:auto;margin-right:auto}
+.bg-fl{position:absolute;pointer-events:none;z-index:0;width:clamp(90px,17vw,240px);height:auto}
+section>*{position:relative;z-index:1}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1.1s ease,transform 1.1s ease}
+.reveal.in{opacity:1;transform:none}
+.faint{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.5;
+ background:radial-gradient(60% 30% at 10% 20%,#e8eef8,transparent 70%),radial-gradient(50% 25% at 95% 55%,#e9eff9,transparent 70%),radial-gradient(60% 25% at 5% 85%,#eef2f9,transparent 70%)}
+
+/* hero frame */
+.hero{padding-top:20px;padding-bottom:20px;min-height:100svh;display:flex;flex-direction:column;justify-content:center}
+.topfl{width:min(100%,560px);height:auto;display:block;margin:0 auto -6px}
+.frame{container-type:inline-size;position:relative;width:min(94%,600px,52svh);margin:0 auto;aspect-ratio:320/470}
+.frame svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.frame .nm{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:15cqw;line-height:1.12;color:#17284a;font-weight:400;letter-spacing:-.025em;text-transform:uppercase}
+.frame .nm i{font-size:6cqw;opacity:.55;font-weight:300;margin:12px 0;letter-spacing:0}
+.sub{margin:20px auto 0;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.9;max-width:460px}
+h2.cin{font-size:clamp(1.35rem,2.6vw,1.9rem);margin-bottom:14px}
+.big{font-size:clamp(3rem,8vw,5rem);font-weight:300;color:#17284a;line-height:1.05;margin:8px 0}
+.small{font-size:.95rem;letter-spacing:.3em;text-transform:uppercase;color:#4c5b73}
+.divider{display:block;width:min(80%,340px);height:auto;margin:26px auto}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,3vw,28px);margin-top:18px}
+section>.gal{max-width:660px}
+section>.cal{max-width:min(100%,560px)}
+section>.sched{max-width:min(100%,460px)}
+section>.gb{max-width:min(100%,620px)}
+section>.map{max-width:min(100%,720px)}
+.gal figure{background:#fff;border:1px solid #efe4e1;border-radius:14px;padding:4px;box-shadow:0 10px 24px #1f4a8222;overflow:hidden}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:11px;display:block}
+.gal figure:nth-child(1){transform:rotate(-1.2deg)}.gal figure:nth-child(2){transform:rotate(1.2deg)}
+
+/* reception */
+.when{display:flex;justify-content:center;align-items:center;gap:16px;margin:12px 0;font-size:1rem;letter-spacing:.18em;text-transform:uppercase}
+.when b{font-weight:300;font-size:clamp(2.4rem,6vw,3.6rem);letter-spacing:0;padding:0 16px;border-left:2px solid #17284a;border-right:2px solid #17284a;line-height:1.1}
+.time{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:400;margin:10px 0 6px}
+.cd{font-size:clamp(1.1rem,2.4vw,1.5rem);color:#33415a;margin-top:6px}
+
+/* calendar */
+.cal{position:relative;margin:24px auto 12px;padding:clamp(22px,4vw,36px) clamp(18px,3vw,32px) 16px;background:#fffefb;border:1.5px solid var(--navy);outline:1px solid var(--gold);outline-offset:-7px;box-shadow:0 8px 24px #1f4a8218}
+.cal .corner{position:absolute;width:clamp(34px,6vw,52px);height:clamp(34px,6vw,52px);color:var(--navy)}
+.cal .tl{left:2px;top:2px}.cal .tr{right:2px;top:2px;transform:scaleX(-1)}.cal .bl{left:2px;bottom:2px;transform:scaleY(-1)}.cal .br{right:2px;bottom:2px;transform:scale(-1)}
+.cal h3{font:500 clamp(1.35rem,3vw,1.9rem) 'Cormorant Garamond';color:#17284a;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);row-gap:6px;font-family:'Cinzel',serif;font-size:clamp(.88rem,2.2vw,1.15rem)}
+.grid .h{font-size:clamp(.7rem,1.8vw,.95rem);color:#3b4a64;padding-bottom:8px;border-bottom:2px solid var(--navy);margin-bottom:6px}
+.grid span{height:clamp(32px,7vw,48px);display:grid;place-items:center;position:relative}
+.grid .on{color:#fff;font-weight:700}
+.grid .on:before{content:"";position:absolute;inset:0;margin:auto;width:34px;height:34px;background:var(--navy);clip-path:path('M17 31 C2 20 -2 10 4 5 C9 1 15 3 17 8 C19 3 25 1 30 5 C36 10 32 20 17 31Z');z-index:-1;animation:beat 1.8s infinite}
+.link{font-size:clamp(1.05rem,2.2vw,1.3rem);display:inline-block;margin:10px 0 22px;font-size:1.05rem;color:#17284a;text-decoration:underline;text-underline-offset:4px;background:none;border:0;cursor:pointer;font-family:inherit}
+.pill.wide{font-family:'Cinzel',serif;font-size:clamp(.95rem,2vw,1.2rem);letter-spacing:.1em;padding:14px 34px}
+
+/* venue */
+.venue{font-size:clamp(1.2rem,2.6vw,1.6rem);margin:8px 0 18px}
+.map{display:block;width:100%;height:clamp(230px,42vw,400px);border:0;border-radius:14px;box-shadow:0 8px 24px #1f4a8222;filter:saturate(.85)}
+.dir{display:block;width:fit-content;margin-top:14px}
+
+/* dress / schedule */
+.dots{display:flex;gap:14px;justify-content:center;margin-top:18px}
+.dots i{width:42px;height:42px;border-radius:50%;box-shadow:0 3px 8px #0002}
+.sched{list-style:none;margin:26px auto 0;position:relative;text-align:left}
+.sched:before{content:"";position:absolute;left:78px;top:8px;bottom:8px;width:2px;background:var(--navy)}
+.sched li{display:grid;grid-template-columns:62px 32px 1fr;align-items:center;margin:0 0 30px;font-size:1.25rem}
+.sched li:after{content:"";grid-column:2;grid-row:1;justify-self:center;width:12px;height:12px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 4px var(--cream)}
+.sched li span:first-child{grid-column:1;text-align:right}.sched li span:last-child{grid-column:3}
+
+/* guestbook */
+.gb{border:1px solid #d9d4c6;border-radius:12px;padding:18px;background:#fffefb;margin-top:20px;text-align:left}
+.fld{width:100%;border:1px solid #6b7890;border-radius:8px;padding:14px;font:400 1.05rem 'Cormorant Garamond','Cairo';background:transparent;color:var(--ink);margin-bottom:12px;resize:none}
+.fld:focus{outline:2px solid #1f4a8255;border-color:var(--navy)}
+.row{display:flex;justify-content:flex-end;gap:10px}
+.wishes{margin-top:16px;display:grid;gap:12px}
+.wish{border:1px solid #d9d4c6;border-radius:12px;padding:14px 16px;text-align:left;background:#fffefb}
+.wish div{display:flex;justify-content:space-between;font-weight:600;font-size:1rem;margin-bottom:6px}
+.wish small{font-weight:400;opacity:.65}
+footer{padding:30px 20px 90px;font-size:clamp(1.1rem,2.2vw,1.4rem);letter-spacing:.14em;color:#4c5b73;text-align:center}
+
+/* music button + toast + modal */
+#mus{position:fixed;right:16px;bottom:18px;z-index:60;width:54px;height:54px;border-radius:50%;border:0;background:var(--navy);box-shadow:0 8px 20px #1f4a8266;display:none;place-items:center;cursor:pointer}
+#mus.show{display:grid}
+#mus svg{width:24px;height:24px;fill:#fff}
+#mus.off .b{animation:none}
+.b{animation:eq 1s infinite alternate;transform-origin:bottom}.b:nth-child(2){animation-delay:.25s}.b:nth-child(3){animation-delay:.5s}
+@keyframes eq{to{transform:scaleY(.35)}}
+.modal{position:fixed;inset:0;background:#0a1c3a99;z-index:90;display:none;align-items:flex-end;justify-content:center;padding:0}
+.modal.open{display:flex}
+.sheet{width:100%;max-width:560px;background:var(--cream);border-radius:22px 22px 0 0;padding:26px 22px 34px;max-height:92svh;overflow:auto;animation:up .4s ease}
+@media(min-width:700px){.modal{align-items:center}.sheet{border-radius:22px}}
+@keyframes up{from{transform:translateY(60px);opacity:0}}
+.sheet h3{margin-bottom:16px;font-size:1.2rem;text-align:center}
+.opt{display:flex;gap:10px;margin-bottom:12px}
+.opt label{flex:1;text-align:center;border:1px solid #6b7890;border-radius:10px;padding:12px 6px;cursor:pointer;font-size:1rem;font-family:'Cairo','Cormorant Garamond'}
+.opt input{display:none}
+.opt label:has(input:checked){background:var(--navy);color:#fff;border-color:var(--navy)}
+.close{display:block;margin:12px auto 0;background:none;border:0;color:#4c5b73;font:inherit;cursor:pointer;text-decoration:underline}
+.msg{text-align:center;margin-top:10px;font-family:'Cairo';font-size:.95rem;min-height:1.4em}
+.ar{font-family:'Cairo',sans-serif}
+@media(max-height:560px) and (orientation:landscape){.hero{min-height:auto}.frame{width:min(60vw,320px)}#cover .ccard{min-height:0;width:min(60vw,380px)}}
+.hero-card{display:block;width:min(94%,600px,calc(74svh*.709));height:auto;margin:0 auto;border-radius:14px;box-shadow:0 18px 50px #1f4a8233}
+
+/* ---- v3 design pass ---- */
+body{background:linear-gradient(180deg,#d9e7f6 0,#e9f0f9 14%,#fdfaf4 34%,#fdfaf4 100%)}
+.faint{opacity:1;background:
+  radial-gradient(60% 18% at 12% 8%,#f6dde2aa,transparent 70%),
+  radial-gradient(55% 18% at 92% 22%,#cfe0f3aa,transparent 70%),
+  radial-gradient(60% 20% at 8% 52%,#f6dde288,transparent 70%),
+  radial-gradient(55% 18% at 95% 78%,#cfe0f388,transparent 70%)}
+.bg-fl{width:clamp(110px,21vw,290px)}
+.bg-fl.l{left:0;transform:translateX(-42%)}
+.bg-fl.r{right:0;transform:translateX(42%) scaleX(1)}
+.garland{display:block;width:min(100%,520px);height:auto;margin:0 auto}
+h2.cin:after{content:"";display:block;width:90px;height:1px;margin:12px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero-card{box-shadow:0 22px 60px #1f4a8238,0 0 0 6px #ffffffcc,0 0 0 7px #c9b98a88}
+.gal figure{background:#fff;border:1px solid #efe4e1;box-shadow:0 14px 30px #1f4a8230}
+.gal figure:before{content:"";display:block}
+.cal{box-shadow:0 14px 36px #1f4a8222}
+.card,.gb{box-shadow:0 12px 32px #1f4a8218}
+.petal{background:linear-gradient(135deg,#f6cdd5,#e49aab)}
+@media(prefers-reduced-motion:reduce){.petal{display:none}}
+.petal{position:fixed;top:-20px;width:13px;height:13px;border-radius:100% 0;opacity:.75;pointer-events:none;z-index:3;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+.time {
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+}
+/* ---- v4: natural flowers, one palette, phone fixes ---- */
+svg[data-fl]{overflow:visible}
+.bg-fl{width:clamp(120px,22vw,300px);opacity:.97}
+.bg-fl.l{transform:translateX(-46%)}.bg-fl.r{transform:translateX(46%)}
+body{background:linear-gradient(180deg,#d6e6f6 0,#e7eff9 12%,#f6f3f6 28%,#fdfaf4 44%)}
+.faint{background:
+  radial-gradient(60% 16% at 10% 6%,#f6dfe5b0,transparent 70%),
+  radial-gradient(55% 16% at 92% 20%,#cfe1f4b0,transparent 70%),
+  radial-gradient(60% 18% at 8% 50%,#f6dfe580,transparent 70%),
+  radial-gradient(55% 16% at 95% 76%,#cfe1f480,transparent 70%)}
+.hero-card{box-shadow:0 22px 60px #2b4d7e30,0 0 0 6px #ffffffd9,0 0 0 7px #d9c9a699}
+h2.cin,.cin{color:var(--navy)}
+.pill{background:linear-gradient(180deg,#34588a,#2b4d7e)}
+.heart{background:var(--navy)}
+#mus{background:var(--navy)}
+@media(max-width:600px){
+  html{font-size:16px}
+  section{padding-left:22px;padding-right:22px}
+  .bg-fl{width:28vw}
+  .bg-fl.l{transform:translateX(-60%)}.bg-fl.r{transform:translateX(60%)}
+  .hero{padding-top:8px}
+  .hero-card{width:min(88%,calc(60svh*.709))}
+  .garland{width:min(92%,380px)}
+  .cin{letter-spacing:.08em}
+  h2.cin{font-size:1.22rem}
+  .sub{letter-spacing:.1em;font-size:.95rem}
+  .when{gap:10px;letter-spacing:.12em;font-size:.9rem}
+  .when b{padding:0 12px}
+  .big{font-size:3.1rem}
+  .gal{gap:10px}
+  .cal{padding-left:14px;padding-right:14px}
+  #mus{width:44px;height:44px;right:calc(12px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+  .map{height:240px}
+  .fld{font-size:16px}
+}
+@media(max-width:360px){
+  section{padding-left:18px;padding-right:18px}
+  .cin{letter-spacing:.05em}.sub{letter-spacing:.06em}
+  .when{font-size:.8rem;letter-spacing:.08em}
+}
+html,body{overflow-x:clip}
+#cover .pill{align-self:center}
+</style>
+</head>
+<body class="lock">
+
+<!-- ================= COVER ================= -->
+<div id="cover">
+  <div class="ccard">
+    <svg class="fl" style="left:-12cqw;top:22cqw" width="150" height="260" data-fl="L" data-seed="3"></svg>
+    <svg class="fl" style="right:-12cqw;top:34cqw" width="150" height="260" data-fl="R" data-seed="8"></svg>
+    <svg class="fl" style="left:-14cqw;bottom:-6cqw" width="150" height="200" data-fl="L" data-seed="15"></svg>
+    <svg class="fl" style="right:-14cqw;bottom:-4cqw" width="150" height="200" data-fl="R" data-seed="19"></svg>
+    <div class="heart"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5.4-8-11.2C4 6.6 6.2 4.5 8.800 4.500c1.400 0 2.600.7 3.200 1.800.6-1.100 1.800-1.800 3.200-1.800C17.800 4.500 20 6.600 20 9.800 20 15.600 12 21 12 21z"/></svg></div>
+    <div class="cnames">ZIAD<i>&amp;</i>ZEINAB</div>
+    <div class="orn"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0l1.500 3.500L10 5 6.500 6.500 5 10 3.500 6.500 0 5l3.500-1.500z"/></svg></div>
+    <div class="cdate">October 31, 2026</div>
+    <div class="cinv">Cordially Invites</div>
+    <button class="pill" id="openBtn">Open</button>
+  </div>
+</div>
+
+<button id="mus" aria-label="music"><svg viewBox="0 0 24 24"><rect class="b" x="3" y="9" width="4" height="12" rx="1"/><rect class="b" x="10" y="3" width="4" height="18" rx="1"/><rect class="b" x="17" y="12" width="4" height="9" rx="1"/></svg></button>
+<audio id="aud" preload="auto" src="music.mp3"></audio>
+
+<main class="wrap">
+<div class="faint"></div>
+
+<!-- Hero -->
+<section class="hero">
+  <svg class="garland" viewBox="0 0 380 90" data-fl="TOP" data-seed="7"></svg>
+  <img class="hero-card reveal" src="images/invitation.jpg" alt="Ziad &amp; Zeinab wedding invitation">
+  <svg class="divider" viewBox="0 0 260 46" data-fl="DIV" data-seed="9"></svg>
+  <p class="cin" style="font-size:1.35rem">Ceremony Info</p>
+  <p class="sub reveal">We joyfully announce<br>the wedding of our children</p>
+</section>
+
+<!-- Couple -->
+<section>
+  <div class="big reveal">Ziad</div>
+  <p class="small reveal">Groom</p>
+  <p class="big reveal" style="font-size:2rem;margin:16px auto 4px">&amp;</p>
+  <div class="big reveal">Zeinab</div>
+  <p class="small reveal">Bride</p>
+  <svg class="divider" viewBox="0 0 260 46" data-fl="DIV" data-seed="2"></svg>
+  <h2 class="cin reveal">Photo Gallery</h2>
+  <div class="gal reveal">
+    <figure><img src="images/groom.jpg" alt="Ziad" loading="lazy"></figure>
+    <figure><img src="images/bride.jpg" alt="Zeinab" loading="lazy"></figure>
+  </div>
+  <svg class="divider" viewBox="0 0 260 46" data-fl="DIV" data-seed="4"></svg>
+</section>
+
+<!-- Reception -->
+<section>
+  <h2 class="cin reveal">Reception Info</h2>
+  <p class="cin reveal" style="font-size:.98rem;letter-spacing:.08em">The reception will take place at:</p>
+  <div class="time reveal">7:00 pm</div>
+  <div class="when reveal"><span>Saturday</span><b>31</b><span>October</span></div>
+  <div class="time reveal" style="font-size:1.6rem">2026</div>
+  <h2 class="cin reveal" style="margin-top:30px;font-size:1.15rem">Countdown</h2>
+  <p class="cd reveal" id="cd">—</p>
+
+  <div class="cal reveal" id="cal">
+    <svg class="corner tl" viewBox="0 0 34 34"><use href="#cornerOrn"/></svg><svg class="corner tr" viewBox="0 0 34 34"><use href="#cornerOrn"/></svg>
+    <svg class="corner bl" viewBox="0 0 34 34"><use href="#cornerOrn"/></svg><svg class="corner br" viewBox="0 0 34 34"><use href="#cornerOrn"/></svg>
+    <h3>October 2026</h3>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- Venue -->
+<section>
+  <h2 class="cin reveal">Wedding Reception Venue</h2>
+  <p class="venue reveal" id="venueName">Kornesh El Mazdy · Love Halls · Sohag</p>
+  <iframe class="map reveal" id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
+  <a class="pill wide dir reveal" id="dirBtn" target="_blank" rel="noopener">Get Directions</a>
+</section>
+
+<!-- Dress code (hidden if DRESS is empty) -->
+<section id="dressSec" hidden>
+  <h2 class="cin reveal">Dress Code</h2>
+  <p class="reveal" id="dressTxt" style="font-size:1.1rem;opacity:.8"></p>
+  <div class="dots reveal" id="dots"></div>
+</section>
+
+<!-- Schedule (hidden if SCHEDULE is empty) -->
+<section id="schedSec" hidden>
+  <h2 class="cin reveal">Wedding Day Schedule</h2>
+  <ul class="sched reveal" id="tl"></ul>
+</section>
+<section>
+    <p class="cin reveal" style="font-size:1.3rem;letter-spacing:.08em">Don't be late ! </p>
+    <br>
+        <p class="cin reveal" style="font-size:1.3rem;letter-spacing:.08em">our Katb Ketab at 7:00 pm</p>
+
+
+</section>
+<!-- Guestbook -->
+<section>
+
+  <h2 class="cin reveal">Guestbook</h2>
+  <form class="gb reveal" id="gbForm">
+    <input class="fld" name="name" placeholder="Enter your name*  /  اكتب اسمك" required>
+    <textarea class="fld" name="note" rows="4" placeholder="Enter your wishes*  /  اكتب تهنئتك" required></textarea>
+    <div class="row"><button class="pill" style="font-size:.95rem;font-family:'Cinzel';letter-spacing:.08em;padding:12px 26px" type="submit">SEND WISHES</button></div>
+    <p class="msg" id="gbMsg"></p>
+  </form>
+  <div class="wishes" id="wishes"></div>
+</section>
+
+<footer><svg class="garland" viewBox="0 0 380 90" data-fl="TOP" data-seed="23" style="transform:scaleY(-1);margin-bottom:6px"></svg><br>ZIAD &amp; ZEINAB · 31.10.2026</footer>
+</main>
+
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="cornerOrn" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M2 32V10C2 5 5 2 10 2h22"/>
+      <path d="M7 32V12c0-3 2-5 5-5h20" opacity=".6"/>
+      <circle cx="13" cy="13" r="6" fill="currentColor" stroke="none"/>
+      <circle cx="15.500" cy="12" r="5" fill="#fffefb" stroke="none"/>
+    </g>
+  </defs>
+</svg>
+
+<script>
+/* ======================= الإعدادات (غيّرها بس من هنا) ======================= */
+const CONFIG = {
+  // Google Form: افتح الفورم > ⋮ > Get pre-filled link > املا بيانات تجريبية > Get link
+  // FORM_ID هو الجزء اللي بين /e/ و /viewform في اللينك. وكل entry.XXXX من نفس اللينك.
+  FORM_ID: "PUT_FORM_ID_HERE",
+  ENTRY: {
+    name:   "entry.0000000001",
+    phone:  "entry.0000000002",
+    attend: "entry.0000000003",
+    guests: "entry.0000000004",
+    note:   "entry.0000000005"
+  },
+  // وقت الفرح (توقيت القاهرة)
+  WEDDING: "2026-10-31T19:00:00+02:00",
+  VENUE_NAME: "Kornesh El Mazdy · Love Halls · Sohag",
+  VENUE_QUERY: "Love Halls Kornesh el Mazdy Sohag",   // غيّره للعنوان أو لينك الخريطة الأدق
+  // اختياري: سيبهم فاضيين لو مش عاوزهم، الأقسام بتختفي لوحدها
+  DRESS: { text: "", colors: [] },                    // مثال: { text:"Formal Attire", colors:["#f4b6c2","#9fb1cf","#fff"] }
+  // الموسيقى: حط الملف باسم music.mp3 جنب index.html
+  // start/end بالثواني. مثال: يبدأ من 1:23 يبقى start: 83. end: 0 يعني لحد آخر الملف
+  MUSIC: { start: 0, end: 0, volume: 0.85 },
+  SCHEDULE: []                                        // مثال: [["19:00","Welcome"],["20:00","Party"]]
+};
+/* ========================================================================== */
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+/* ---------- natural flowers: roses, peonies, blossoms, wisteria, leaves (inline SVG) ---------- */
+function rng(seed){let s=seed*9301+49297;return()=>((s=(s*9301+49297)%233280)/233280)}
+const NS='http://www.w3.org/2000/svg';
+const C={
+  rose:{l:'#fbe4e9',m:'#f1b7c5',d:'#d68aa0'},
+  peach:{l:'#fff1e5',m:'#f8cfb3',d:'#e5a584'},
+  cream:{l:'#fffef8',m:'#f5ecd9',d:'#d9c9a6'},
+  lav:{l:'#f0e8fb',m:'#c9b4e8',d:'#9b84cd'},
+  sky:{l:'#eaf4ff',m:'#b5d1f1',d:'#84abdd'},
+  leaf:{l:'#cddfba',m:'#9fba8b',d:'#6e8e5f'}
+};
+(function(){
+  let d='';
+  for(const k in C){const c=C[k];
+    d+=`<linearGradient id="lg-${k}" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="${c.d}"/><stop offset=".5" stop-color="${c.m}"/><stop offset="1" stop-color="${c.l}"/></linearGradient>`;
+    d+=`<radialGradient id="rg-${k}"><stop offset="0" stop-color="${c.l}"/><stop offset="1" stop-color="${c.m}"/></radialGradient>`;}
+  const el=document.createElementNS(NS,'svg');el.setAttribute('width','0');el.setAttribute('height','0');el.setAttribute('aria-hidden','true');
+  el.style.cssText='position:absolute;width:0;height:0';el.innerHTML='<defs>'+d+'</defs>';document.body.appendChild(el);
+})();
+const f1=n=>n.toFixed(1);
+const PET=(r,w)=>`M0 0C${f1(-r*w)} ${f1(-r*.12)} ${f1(-r*w*1.1)} ${f1(-r*.82)} ${f1(-r*.14)} ${f1(-r)}Q0 ${f1(-r*1.07)} ${f1(r*.14)} ${f1(-r)}C${f1(r*w*1.1)} ${f1(-r*.82)} ${f1(r*w)} ${f1(-r*.12)} 0 0Z`;
+function bloom(x,y,r,k,rot,layers,w,R){
+  const c=C[k];let g=`<g transform="translate(${f1(x)} ${f1(y)}) rotate(${rot|0})">`;
+  layers.forEach(([n,s,off])=>{for(let i=0;i<n;i++){
+    const a=i*360/n+off+(R()-.5)*16,sc=s*(.9+R()*.18);
+    g+=`<path d="${PET(r*sc,w)}" transform="rotate(${a|0})" fill="url(#lg-${k})" stroke="${c.d}" stroke-opacity=".4" stroke-width=".45"/>`}});
+  return g+`<circle r="${f1(r*.1)}" fill="${c.d}" fill-opacity=".5"/></g>`;
+}
+const rose=(x,y,r,k,rot,R)=>bloom(x,y,r,k,rot,[[5,1,0],[5,.78,36],[4,.56,14],[3,.34,60]],.8,R);
+const peony=(x,y,r,k,rot,R)=>bloom(x,y,r,k,rot,[[8,1,0],[8,.85,22],[7,.67,9],[6,.5,30],[5,.32,0]],.95,R);
+function blossom(x,y,r,k,rot){
+  const c=C[k];let g=`<g transform="translate(${f1(x)} ${f1(y)}) rotate(${rot|0})">`;
+  for(let i=0;i<5;i++)g+=`<path d="M0 0C${f1(-r*.62)} ${f1(-r*.2)} ${f1(-r*.72)} ${f1(-r*.8)} ${f1(-r*.2)} ${f1(-r*.96)}L0 ${f1(-r*.8)}L${f1(r*.2)} ${f1(-r*.96)}C${f1(r*.72)} ${f1(-r*.8)} ${f1(r*.62)} ${f1(-r*.2)} 0 0Z" transform="rotate(${i*72})" fill="url(#lg-${k})" stroke="${c.d}" stroke-opacity=".5" stroke-width=".4"/>`;
+  g+=`<circle r="${f1(r*.17)}" fill="#ebc95e"/>`;
+  for(let i=0;i<6;i++){const a=i*Math.PI/3;g+=`<circle cx="${f1(Math.cos(a)*r*.28)}" cy="${f1(Math.sin(a)*r*.28)}" r="${f1(r*.05)}" fill="#b88e2a"/>`}
+  return g+'</g>';
+}
+function daisy(x,y,r,rot){
+  let g=`<g transform="translate(${f1(x)} ${f1(y)}) rotate(${rot|0})">`;
+  for(let i=0;i<12;i++)g+=`<ellipse cy="${f1(-r*.62)}" rx="${f1(r*.15)}" ry="${f1(r*.4)}" transform="rotate(${i*30})" fill="url(#lg-cream)" stroke="${C.cream.d}" stroke-opacity=".5" stroke-width=".4"/>`;
+  return g+`<circle r="${f1(r*.2)}" fill="#e9bf4f"/><circle r="${f1(r*.1)}" cx="${f1(-r*.04)}" cy="${f1(-r*.04)}" fill="#f6dc86"/></g>`;
+}
+function bud(x,y,r,k,rot){
+  return `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${rot|0})"><path d="M0 0C${f1(-r*.6)} ${f1(-r*.3)} ${f1(-r*.5)} ${f1(-r*1.2)} 0 ${f1(-r*1.5)}C${f1(r*.5)} ${f1(-r*1.2)} ${f1(r*.6)} ${f1(-r*.3)} 0 0Z" fill="url(#lg-${k})" stroke="${C[k].d}" stroke-opacity=".5" stroke-width=".4"/><path d="M0 0C${f1(-r*.5)} ${f1(-r*.1)} ${f1(-r*.7)} ${f1(-r*.5)} ${f1(-r*.5)} ${f1(-r*.7)}M0 0C${f1(r*.5)} ${f1(-r*.1)} ${f1(r*.7)} ${f1(-r*.5)} ${f1(r*.5)} ${f1(-r*.7)}" fill="none" stroke="${C.leaf.m}" stroke-width="1"/></g>`;
+}
+function leaf(x,y,l,rot){
+  return `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${rot|0})"><path d="M0 0C${f1(l*.25)} ${f1(-l*.34)} ${f1(l*.75)} ${f1(-l*.3)} ${f1(l)} 0C${f1(l*.75)} ${f1(l*.3)} ${f1(l*.25)} ${f1(l*.34)} 0 0Z" fill="url(#lg-leaf)" stroke="${C.leaf.d}" stroke-opacity=".55" stroke-width=".5"/><path d="M0 0Q${f1(l*.5)} ${f1(-l*.03)} ${f1(l*.92)} 0" fill="none" stroke="${C.leaf.d}" stroke-opacity=".45" stroke-width=".5"/></g>`;
+}
+function sprig(x,y,len,ang,R){
+  let g=`<g transform="translate(${f1(x)} ${f1(y)}) rotate(${ang|0})"><path d="M0 0Q${f1(len*.5)} ${f1(len*.04)} ${f1(len)} ${f1(len*.12)}" fill="none" stroke="${C.leaf.d}" stroke-opacity=".7" stroke-width=".8"/>`;
+  for(let i=1;i<=9;i++){const t=i/9,fx=t*len,fy=t*len*.12+len*.02,s=len*.075*(1.15-t*.7);
+    for(const sd of [-1,1]){g+=`<ellipse cx="${f1(fx+(R()-.5)*2)}" cy="${f1(fy+sd*s*.95)}" rx="${f1(s)}" ry="${f1(s*.78)}" transform="rotate(${(sd*25)|0} ${f1(fx)} ${f1(fy)})" fill="url(#rg-lav)" stroke="${C.lav.d}" stroke-opacity=".5" stroke-width=".4"/>`}}
+  return g+'</g>';
+}
+const ANG=(a,b)=>Math.atan2(a[1]-b[1],a[0]-b[0])*180/Math.PI;
+const bz=(P0,Cc,P1)=>t=>[(1-t)*(1-t)*P0[0]+2*(1-t)*t*Cc[0]+t*t*P1[0],(1-t)*(1-t)*P0[1]+2*(1-t)*t*Cc[1]+t*t*P1[1]];
+const pick=(R,a)=>a[Math.floor(R()*a.length)];
+function bigFlower(x,y,r,R){
+  const k=pick(R,['rose','rose','peach','cream','rose','lav']);
+  return R()<.5?peony(x,y,r,k,R()*360,R):rose(x,y,r,k,R()*360,R);
+}
+function smallFlower(x,y,r,R){
+  const t=R();
+  if(t<.34)return daisy(x,y,r,R()*360);
+  return blossom(x,y,r,pick(R,['sky','sky','cream','rose','lav','peach']),R()*360);
+}
+function bouquet(w,h,side,R){
+  const d=side==='L'?1:-1,ex=side==='L'?0:w;
+  let stem='',lv='',big='',small='',sp='';
+  const n=Math.max(3,Math.round(h/95));
+  for(let i=0;i<n;i++){
+    const y0=(i+.5)*h/n+(R()-.5)*14,y1=y0+(R()-.5)*h/n*1.3,x1=ex+d*w*(.5+R()*.42);
+    const P0=[ex-d*6,y0],Cc=[ex+d*w*.35,y0+(R()-.5)*50],P1=[x1,y1],q=bz(P0,Cc,P1);
+    stem+=`<path d="M${f1(P0[0])} ${f1(P0[1])}Q${f1(Cc[0])} ${f1(Cc[1])} ${f1(P1[0])} ${f1(P1[1])}" fill="none" stroke="#86a173" stroke-width="1.5" stroke-linecap="round"/>`;
+    for(let t=.2,j=0;t<=1.001;t+=.16,j++){const p=q(t),a=ANG(q(Math.min(1,t+.02)),q(Math.max(0,t-.02)));
+      lv+=leaf(p[0],p[1],20+R()*18,a+(j%2?40:-40),R);}
+    let p=q(.08+R()*.18);big+=bigFlower(p[0],p[1],22+R()*14,R);
+    p=q(.45+R()*.2);small+=smallFlower(p[0],p[1],10+R()*6,R);
+    p=q(.78+R()*.1);if(R()<.7)sp+=sprig(p[0],p[1],34+R()*20,70+R()*40,R);
+    p=q(1);small+=R()<.5?bud(p[0],p[1],7+R()*4,pick(R,['rose','cream','peach']),ANG(q(1),q(.97))+90):smallFlower(p[0],p[1],7+R()*4,R);
+  }
+  return stem+lv+big+small+sp;
+}
+function garland(w,h,R,flat){
+  const P0=[6,h*(flat?.58:.84)],Cc=[w/2,flat?h*.05:-h*.45],P1=[w-6,P0[1]],q=bz(P0,Cc,P1);
+  let o=`<path d="M${f1(P0[0])} ${f1(P0[1])}Q${f1(Cc[0])} ${f1(Cc[1])} ${f1(P1[0])} ${f1(P1[1])}" fill="none" stroke="#86a173" stroke-width="1.4" stroke-linecap="round"/>`;
+  for(let t=.04,j=0;t<=.97;t+=.055,j++){const p=q(t),a=ANG(q(t+.02),q(t-.02));o+=leaf(p[0],p[1],h*(flat?.3:.2)+R()*5,a+(j%2?42:-42),R)}
+  const rr=h*(flat?.36:.3);
+  [[.12,.45,'S'],[.88,.45,'S'],[.27,.62,'B'],[.73,.62,'B']].forEach(([t,s,k],i)=>{const p=q(t);
+    o+=k==='B'?(i%2?peony(p[0],p[1],rr*s,'rose',R()*360,R):rose(p[0],p[1],rr*s,'peach',R()*360,R)):'';});
+  [.07,.19,.35,.43,.57,.65,.81,.93].forEach(t=>{const p=q(t);o+=smallFlower(p[0],p[1],h*(flat?.15:.1)+R()*2,R)});
+  const pc=q(.5);o+=(R()<.5?peony:rose)(pc[0],pc[1],rr,'rose',R()*360,R);
+  if(!flat){[.17,.83].forEach(t=>{const p=q(t);o+=sprig(p[0],p[1],h*.5,80+R()*20,R)})}
+  return o;
+}
+function cluster(el){
+  const vb=el.viewBox.baseVal;
+  const w=+(el.getAttribute('width')||vb.width),h=+(el.getAttribute('height')||vb.height);
+  if(!el.getAttribute('viewBox'))el.setAttribute('viewBox',`0 0 ${w} ${h}`);
+  el.setAttribute('overflow','visible');
+  const R=rng(+el.dataset.seed||1),k=el.dataset.fl;
+  el.innerHTML=k==='DIV'?garland(260,46,R,true):k==='TOP'?garland(380,90,R,false):bouquet(w,h,k==='L'?'L':'R',R);
+}
+$$('[data-fl]').forEach(cluster);
+
+
+
+/* ---------- side bouquets for every section ---------- */
+(function(){
+  let seed=50;
+  $$('main section').forEach((sec,i)=>{
+    const spots=[['l',8],['r',34],['l',62],['r',80]];
+    spots.forEach(([side,top],k)=>{
+      if(k>1 && (sec.offsetHeight<650 || innerWidth<700)) return;
+      const el=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      el.setAttribute('class','bg-fl '+side);el.setAttribute('width','150');el.setAttribute('height','300');
+      el.dataset.fl=side==='l'?'L':'R';el.dataset.seed=String(seed++);
+      el.style.top=(top+(i%2?3:-2))+'%';
+      sec.insertBefore(el,sec.firstChild);cluster(el);
+    });
+  });
+})();
+/* ---------- falling petals ---------- */
+function petals(){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  setInterval(()=>{
+    if(document.hidden||document.querySelectorAll('.petal').length>14)return;
+    const p=document.createElement('i');p.className='petal';
+    p.style.left=Math.random()*100+'vw';
+    p.style.animationDuration=(7+Math.random()*7)+'s';
+    p.style.transform=`scale(${.7+Math.random()*.9})`;
+    document.body.appendChild(p);setTimeout(()=>p.remove(),15000);
+  },900);
+}
+/* ---------- reveal on scroll ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.reveal').forEach(e=>io.observe(e));
+
+/* ---------- cover / open / music ---------- */
+const aud=$('#aud'),mus=$('#mus');
+const M=CONFIG.MUSIC||{start:0,end:0,volume:.85};
+function seekStart(){try{aud.currentTime=M.start||0}catch(e){}}
+function fadeIn(){aud.volume=0;let v=0;const t=setInterval(()=>{v=Math.min(M.volume,v+M.volume/20);aud.volume=v;if(v>=M.volume)clearInterval(t)},100)}
+function startMusic(){
+  const go=()=>{seekStart();aud.volume=0;aud.play().then(()=>{mus.classList.add('show');mus.classList.remove('off');fadeIn()}).catch(()=>{})};
+  if(aud.readyState>=1)go();else{aud.addEventListener('loadedmetadata',go,{once:true});aud.load()}
+}
+aud.addEventListener('timeupdate',()=>{if(M.end&&aud.currentTime>=M.end){seekStart()}});
+aud.addEventListener('ended',()=>{seekStart();aud.play().catch(()=>{})});
+$('#openBtn').onclick=()=>{
+  $('#cover').classList.add('opening');
+  setTimeout(()=>{$('#cover').classList.add('gone');document.body.classList.remove('lock')},650);
+  startMusic();
+  petals();
+};
+mus.onclick=()=>{ if(aud.paused){aud.play();mus.classList.remove('off')} else {aud.pause();mus.classList.add('off')} };
+
+/* ---------- countdown ---------- */
+const W=new Date(CONFIG.WEDDING);
+function tick(){
+  let t=Math.max(0,W-new Date());
+  const d=Math.floor(t/864e5);t%=864e5;const h=Math.floor(t/36e5);t%=36e5;const m=Math.floor(t/6e4),s=Math.floor(t%6e4/1e3);
+  $('#cd').textContent = (W-new Date())<=0 ? "Today is the day 🤍" : `${d} days ${h} hours ${m} min ${s} sec`;
+}
+tick();setInterval(tick,1000);
+
+/* ---------- calendar: October 2026 ---------- */
+(function(){
+  const y=W.getFullYear(),mo=W.getMonth(),day=W.getDate();
+  const first=(new Date(y,mo,1).getDay()+6)%7, days=new Date(y,mo+1,0).getDate();
+  let h=['Mo','Tu','We','Th','Fr','Sa','Su'].map(x=>`<span class="h">${x}</span>`).join('');
+  for(let i=0;i<first;i++)h+='<span></span>';
+  for(let d=1;d<=days;d++)h+=`<span class="${d===day?'on':''}">${d}</span>`;
+  $('#grid').innerHTML=h;
+})();
+
+/* ---------- venue / map ---------- */
+const q=encodeURIComponent(CONFIG.VENUE_QUERY);
+$('#venueName').textContent=CONFIG.VENUE_NAME;
+$('#map').src=`https://maps.google.com/maps?q=${q}&z=15&output=embed`;
+$('#dirBtn').href=`https://www.google.com/maps/search/?api=1&query=${q}`;
+
+/* ---------- optional dress code / schedule ---------- */
+if(CONFIG.DRESS.text||CONFIG.DRESS.colors.length){
+  $('#dressSec').hidden=false;$('#dressTxt').textContent=CONFIG.DRESS.text;
+  $('#dots').innerHTML=CONFIG.DRESS.colors.map(c=>`<i style="background:${c}"></i>`).join('');
+}
+if(CONFIG.SCHEDULE.length){
+  $('#schedSec').hidden=false;
+  $('#tl').innerHTML=CONFIG.SCHEDULE.map(([t,l])=>`<li><span>${t}</span><span>${l}</span></li>`).join('');
+}
+$$('.reveal').forEach(e=>io.observe(e));
+
+/* ---------- Google Form posting ---------- */
+async function send(data){
+  const body=new URLSearchParams();
+  for(const k in CONFIG.ENTRY) body.append(CONFIG.ENTRY[k], data[k]??'');
+  await fetch(`https://docs.google.com/forms/d/e/${CONFIG.FORM_ID}/formResponse`,{method:'POST',mode:'no-cors',body});
+}
+
+/* guestbook: wishes also go to the form; the sender sees their own wish on this device */
+const KEY='zz_wishes';
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return[]}}
+function save(a){try{localStorage.setItem(KEY,JSON.stringify(a))}catch(e){}}
+function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){
+  $('#wishes').innerHTML=load().map(w=>`<div class="wish"><div><span>${esc(w.name)}</span><small>${esc(w.at)}</small></div><p>${esc(w.note)}</p></div>`).join('');
+}
+render();
+$('#gbForm').onsubmit=async e=>{
+  e.preventDefault();const f=e.target,m=$('#gbMsg'),b=f.querySelector('button');
+  b.disabled=true;m.textContent='...';
+  const w={name:f.name.value.trim(),note:f.note.value.trim(),at:new Date().toLocaleString('en-GB',{dateStyle:'short',timeStyle:'short'})};
+  try{
+    await send({name:w.name,note:w.note});
+    if(w.note){const a=load();a.unshift(w);save(a);render();}f.reset();m.textContent='تم تسجيل ردك 💙 شكراً ليك! / Thank you';
+  }catch(err){m.textContent='Error, please retry.'}
+  b.disabled=false;
+};
+</script>
+</body>
+</html>
