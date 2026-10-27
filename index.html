@@ -350,7 +350,7 @@ const CONFIG = {
   // وقت الفرح (توقيت القاهرة)
   WEDDING: "2026-10-31T19:00:00+02:00",
   VENUE_NAME: "Kornesh El Maady · Love Halls",
-  VENUE_QUERY: "https://maps.app.goo.gl/ejJ1vNRKrmBNj6kX7?g_st=aw",   // غيّره للعنوان أو لينك الخريطة الأدق
+  VENUE_QUERY: "X6HJ+CX4 Love Halls, Nile Corniche, El Maadi, Cairo",   // غيّره للعنوان أو لينك الخريطة الأدق
   // اختياري: سيبهم فاضيين لو مش عاوزهم، الأقسام بتختفي لوحدها
   DRESS: { text: "", colors: [] },                    // مثال: { text:"Formal Attire", colors:["#f4b6c2","#9fb1cf","#fff"] }
   // الموسيقى: حط الملف باسم music.mp3 جنب index.html
@@ -542,7 +542,7 @@ tick();setInterval(tick,1000);
 const q=encodeURIComponent(CONFIG.VENUE_QUERY);
 $('#venueName').textContent=CONFIG.VENUE_NAME;
 $('#map').src=`https://maps.google.com/maps?q=${q}&z=15&output=embed`;
-$('#dirBtn').href=`https://www.google.com/maps/search/?api=1&query=${q}`;
+$('#dirBtn').href="https://maps.app.goo.gl/ejJ1vNRKrmBNj6kX7";
 
 /* ---------- optional dress code / schedule ---------- */
 if(CONFIG.DRESS.text||CONFIG.DRESS.colors.length){
